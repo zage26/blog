@@ -1,0 +1,42 @@
+<!-- Create a button at the bottom of each post that allows you to delete that post. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Italiana|Loved+by+the+King|Open+Sans+Condensed:300|Over+the+Rainbow|Philosopher|Raleway+Dots|Stardos+Stencil|UnifrakturMaguntia" rel="stylesheet">
+</head>
+<body>
+	<section id="page-container">
+		<section id="one">
+			<p id="blog_name">Zage's Blog</p>
+		</section>
+
+		<section id="two">
+			<div id="post">
+				<label>Title: </label>
+				<input type="text" id="title" placeholder="Ex) My Favorite Animals" required="required" maxlength="180">
+				<br>
+				<br>
+				<label>Text: </label>
+				<br>
+				<textarea placeholder="Ex) For my whole life I have always been an animal lover, etc." required="required" maxlength="650" type="text" id="text_area"></textarea>
+				<br>
+				<br>
+				<label>Publisher: </label>
+				<input type="text" placeholder="Ex) Zage Phillips" maxlength="180" id="publisher">
+				<button id="submit" type="submit">Post</button>
+			</div>
+		</section>
+		
+		<section id="three">
+			<div id="published">
+				
+			</div>
+		</section>
+	</section>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
