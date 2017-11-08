@@ -1,10 +1,11 @@
-/*General*/
+/*Code for: General, section one, section two
+section 3, buttons, etc.*/
 body {
 	margin: 0px 30px;
 	padding: 0px;
 }
 
-#blog_name {
+.blog_name {
 	position: relative;
 	left: 20px;
 	font-size: 40px;
@@ -12,13 +13,16 @@ body {
 	font-family: 'Abril Fatface', cursive;
 }
 
-#page-container {
+.page-container {
 	display: grid;
 	grid-template-rows: 10% 25% 75%;
 	height: 1025px;
 }
 
-/*Section One*/
+.hidden {
+	display: none;
+}
+
 #one {
 	display: flex;
 	align-items: center;
@@ -26,7 +30,6 @@ body {
 	background-image: url("blog_header.png");
 }
 
-/*Section Two*/
 #two {
 	width: 100%;
 	display: grid;
@@ -70,7 +73,17 @@ label {
     cursor: pointer;
 }
 
-/*Section Three*/
+#push {
+	background-color: #8228FB;
+    border: none;
+    color: white;
+    width: 75px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
 #three {
 	display: grid;
 	background-image: url("abstract.png");
@@ -91,6 +104,8 @@ label {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 13px;
     cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1s ease-in 1 forwards;
 }
 
 .title {
@@ -120,4 +135,68 @@ label {
 .fade_in {
   opacity: 0;
   animation: fadeIn 1s ease-in 1 forwards;
+}
+
+.new_sec {
+	display: grid;
+	width: 100%;
+	height: 400px;
+	background-image: url("blog_header.png");
+	position: relative;
+	top: 90px;
+}
+
+.new_div {
+	margin: 20px;
+	display: grid;
+	grid-template-rows: 25% 75%;
+}
+
+.split {
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.blog_name_new {
+	text-align: center;
+	position: relative;
+	top: -25px;
+	font-size: 40px;
+	color: white;
+	font-family: 'Abril Fatface', cursive;
+}
+
+.sec1 {
+	display: flex;
+	margin: 0px 5px 0px 0px;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	position:relative;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.sec2 {
+	display: flex;
+	margin: 0px 5px 0px 0px;
+	position:relative;
+	align-items: center;
+	justify-content: center
+
+}
+
+.par {
+	height: 125px;
+	width: 305px;
+}
+
+.par2 {
+	text-align: center;
+	height: 50px;
+	width: 305px;
+}
+
+img {
+	height: 125px;
 }
